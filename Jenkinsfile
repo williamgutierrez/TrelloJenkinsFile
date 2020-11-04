@@ -4,17 +4,17 @@ pipeline {
     gradle "gradle"
   }
   stages {
-    stages("build") {
+    stage("build") {
           steps {
              bat 'echo building'
           }
     }
-    stages("test"){
+    stage("test"){
           steps {
              bat 'echo Testing'
           }
     }
-    stages("deploy"){
+    stage("deploy"){
           steps {
              echo "echo deploying"  
           }
