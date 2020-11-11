@@ -4,6 +4,11 @@ pipeline {
     gradle "gradle"
  }
  stages {
+    stage("configuration") {
+         steps {
+             bat 'echo configuration'
+         }
+    }
     stage("build") {
          steps {
              bat 'echo building'
