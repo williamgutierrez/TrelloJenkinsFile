@@ -14,7 +14,7 @@ pipeline {
              bat 'echo building'
          }
     }
-     stage("test") {
+    stage("test") {
          steps {
              bat 'echo testing'
          }
