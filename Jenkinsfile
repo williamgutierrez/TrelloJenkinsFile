@@ -4,12 +4,20 @@ pipeline {
     gradle "gradle"
  }
  stages {
-    stage("configuration") {
+   stage("build") {
          steps {
-             bat 'gradle uiTests'
+             bat 'gradle --version'
          }
     }
-    
-     
+   stage("test"){
+    steps{
+      bat 'gradle clean executeFeatures'
+    }
+   }
+   stage("deploy"){
+    steps{
+      echo "deploy aplication"
+    }
+  }   
  }
 }
