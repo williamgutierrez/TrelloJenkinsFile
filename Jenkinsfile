@@ -16,7 +16,7 @@ pipeline {
    }
    stage("deploy"){
     steps{
-      bat "deploy aplication"
+      bat 'deploy aplication'
     }
   }   
  }
