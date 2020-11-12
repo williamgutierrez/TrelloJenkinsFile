@@ -5,13 +5,13 @@ pipeline {
  }
  stages {
    stage("build") {
-         steps {
-             bat 'gradle --version'
-         }
+      steps {
+       bat 'gradle --version'
+      }
     }
    stage("test"){
-    steps{
-      bat 'gradle clean executeFeatures'
+     steps{
+      bat 'gradle uiTests'
     }
    }
    stage("deploy"){
