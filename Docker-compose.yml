@@ -4,4 +4,4 @@ automation:
 	container_name: automation    
 	image: 'Trello:1.0.0'    
 	ports:      
-    - 4040:7070    
+      - 4040:7070
